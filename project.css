@@ -1,14 +1,14 @@
 body {
-    font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: "Hiragino Kaku Gothic ProN";
+    background-color: #dfdcdc;
+    color: rgb(216, 169, 106);
     padding: 2rem;
     line-height: 1.6;
   }
   
   h1 {
     text-align: center;
-    color: #444;
+    color: rgb(212, 154, 77);
     margin-bottom: 2rem;
   }
   
@@ -25,7 +25,6 @@ body {
   
   .cafe-card h2 {
     color: #0077aa;
-    margin-bottom: 1rem;
   }
   
   ul {
@@ -37,8 +36,3 @@ body {
     margin-bottom: 0.5rem;
   }
   
-  strong {
-    display: inline-block;
-    width: 6em;
-    color: #555;
-  }

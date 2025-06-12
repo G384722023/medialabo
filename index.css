@@ -25,11 +25,7 @@ body {
     color: rgb(217, 40, 214);
     margin-top: 1.2rem;
   }
-  
-  p {
-    margin: 0.8rem 0;
-    line-height: 1.6;
-  }
+
   a:link {
     color: pink;
   }
