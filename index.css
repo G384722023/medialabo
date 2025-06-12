@@ -1,0 +1,43 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: lab(55.18% 88.82 -42.74 / 0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    background-color: rgba(206, 35, 206, 0.311);
+    color: purple;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  h2 {
+    border-left: 5px solid rgba(206, 35, 206, 0.311);
+    color: purple;
+    padding-left: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  h3 {
+    color: rgb(217, 40, 214);
+    margin-top: 1.2rem;
+  }
+  
+  p {
+    margin: 0.8rem 0;
+    line-height: 1.6;
+  }
+  a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: blue;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
