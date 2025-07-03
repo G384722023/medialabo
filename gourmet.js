@@ -24,9 +24,9 @@ function printDom(data) {
   u.insertAdjacentElement('beforeend', l);
 
   let a = document.querySelector('input#guess');
-  let key = document.createElement('p');
-  key.textContent = '検索キー: ' + a.value;
-  l.insertAdjacentElement('beforeend', key);
+  let k = document.createElement('p');
+  k.textContent = '検索キー: ' + a.value;
+  l.insertAdjacentElement('beforeend', k);
 
   for (let shop of data.results.shop) {
     let d = document.createElement('div');
