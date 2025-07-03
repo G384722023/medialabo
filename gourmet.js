@@ -18,7 +18,49 @@ b = document.querySelector('button#submit');
 b.addEventListener('click',print);
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let l = document.createElement('div');
+  l.id = 'result';
+  let u = document.querySelector('body');
+  u.insertAdjacentElement('beforeend', l);
 
+  let a = document.querySelector('input#guess');
+  let key = document.createElement('p');
+  key.textContent = '検索キー: ' + a.value;
+  l.insertAdjacentElement('beforeend', key);
+
+  for (let shop of data.results.shop) {
+    let d = document.createElement('div');
+
+    let name = document.createElement('p');
+    name.textContent = '名前: ' + shop.name;
+    d.insertAdjacentElement('beforeend', name);
+
+    let address = document.createElement('p');
+    address.textContent = '住所: ' + shop.address;
+    d.insertAdjacentElement('beforeend', address);
+
+    let budget = document.createElement('p');
+    budget.textContent = '予算: ' + shop.budget.name;
+    d.insertAdjacentElement('beforeend', budget);
+
+    let access = document.createElement('p');
+    access.textContent = 'アクセス: ' + shop.access;
+    d.insertAdjacentElement('beforeend', access);
+
+    let genre = document.createElement('p');
+    genre.textContent = 'ジャンル: ' + shop.genre.name;
+    d.insertAdjacentElement('beforeend', genre);
+
+    let close = document.createElement('p');
+    close.textContent = '営業時間: ' + shop.close;
+    d.insertAdjacentElement('beforeend', close);
+
+    let mobile = document.createElement('p');
+    mobile.textContent = '最寄駅: ' + shop.mobile_access;
+    d.insertAdjacentElement('beforeend', mobile);
+
+    l.insertAdjacentElement('beforeend', d);
+  }
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
