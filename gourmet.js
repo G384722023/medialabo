@@ -29,37 +29,42 @@ function printDom(data) {
   l.insertAdjacentElement('beforeend', k);
 
   for (let shop of data.results.shop) {
-    let d = document.createElement('div');
+    let div = document.createElement('div');
+    l.insertAdjacentElement('beforeend', div);
+    div.className = 'cafe-card';
+    let d = document.createElement('ul');
+    div.insertAdjacentElement('beforeend', d);
 
-    let name = document.createElement('p');
+    let name = document.createElement('li');
     name.textContent = '名前: ' + shop.name;
     d.insertAdjacentElement('beforeend', name);
 
-    let address = document.createElement('p');
+
+    let address = document.createElement('li');
     address.textContent = '住所: ' + shop.address;
     d.insertAdjacentElement('beforeend', address);
 
-    let budget = document.createElement('p');
+    let budget = document.createElement('li');
     budget.textContent = '予算: ' + shop.budget.name;
     d.insertAdjacentElement('beforeend', budget);
 
-    let access = document.createElement('p');
+    let access = document.createElement('li');
     access.textContent = 'アクセス: ' + shop.access;
     d.insertAdjacentElement('beforeend', access);
 
-    let genre = document.createElement('p');
+    let genre = document.createElement('li');
     genre.textContent = 'ジャンル: ' + shop.genre.name;
     d.insertAdjacentElement('beforeend', genre);
 
-    let close = document.createElement('p');
+    let close = document.createElement('li');
     close.textContent = '営業時間: ' + shop.close;
     d.insertAdjacentElement('beforeend', close);
 
-    let mobile = document.createElement('p');
+    let mobile = document.createElement('li');
     mobile.textContent = '最寄駅: ' + shop.mobile_access;
     d.insertAdjacentElement('beforeend', mobile);
 
-    l.insertAdjacentElement('beforeend', d);
+    //l.insertAdjacentElement('beforeend', d);
   }
 }
 
